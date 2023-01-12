@@ -1,0 +1,64 @@
+.livros-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.livros-lista h2 {
+  margin-bottom: 40px;
+}
+
+.livros-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+.livros-lista li {
+  flex: 1;
+  min-width: 280px;
+}
+
+.livros-lista a {
+  display: block;
+}
+
+.livros-lista img {
+  margin-bottom: 16px;
+}
+
+.livros-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.livros-lista h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.livros-lista a:hover h3::before {
+  width: 24px;
+}
+
+.livros-lista li span {
+  padding-left: 20;
+}
+
+@media (max-width: 800px) {
+  .livros-lista {
+    padding-bottom: 60px;
+  }
+  .livros-lista ul {
+    gap: 20px;
+  }
+}
