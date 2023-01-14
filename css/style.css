@@ -11,6 +11,7 @@
 @import "./home/introducao.css";
 @import "./home/categoria.css";
 @import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
 /* Livros */
 @import "./livros/livros-lista.css";
