@@ -15,3 +15,6 @@
 
 /* Livros */
 @import "./livros/livros-lista.css";
+
+/* Atacado */
+@import "./atacado/atacado.css";
