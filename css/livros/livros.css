@@ -1,0 +1,66 @@
+.livros-bg:nth-child(odd) {
+  background: var(--cor-11);
+}
+
+.livros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.livros-imagem {
+  display: grid;
+}
+
+.livros-imagem img {
+  grid-area: 1/1;
+}
+
+.livros-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background: var(--cor-12);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+.livros-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.livros h2,
+.livros p {
+  grid-column: 1/-1;
+}
+
+.livros h2 {
+  margin-bottom: 20px;
+}
+
+.livros h2::before {
+  margin-bottom: 20px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.livros p {
+  margin-bottom: 32px;
+}
+
+.livros a {
+  place-self: center;
+}
+
+.livros-conteudo img {
+  width: 24px;
+  margin-right: 8px;
+}
