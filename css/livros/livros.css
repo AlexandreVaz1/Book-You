@@ -1,5 +1,9 @@
 .livros-bg:nth-child(odd) {
-  background: var(--cor-11);
+  background-image: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-11) 0
+  );
 }
 
 .livros {
@@ -31,6 +35,7 @@
 .livros-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-content: start;
 }
 
 .livros h2,
@@ -63,4 +68,25 @@
 .livros-conteudo img {
   width: 24px;
   margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .livros-bg:nth-child(odd) {
+    background: var(--cor-11);
+  }
+  .livros {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .livros-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .livros a {
+    place-self: start;
+  }
 }
