@@ -18,6 +18,9 @@
 @import "./livros/livros.css";
 @import "./livros/livros-lista.css";
 
+/* Livro */
+@import "./livro/livro.css";
+
 /* Atacado */
 @import "./atacado/atacado.css";
 @import "./atacado/vantagens.css";
