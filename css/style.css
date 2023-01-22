@@ -20,6 +20,8 @@
 
 /* Atacado */
 @import "./atacado/atacado.css";
+@import "./atacado/vantagens.css";
+@import "./atacado/perguntas.css";
 
 /* Termos */
 @import "./termos/termos.css";
