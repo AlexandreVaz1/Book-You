@@ -6,7 +6,7 @@
 .parceiro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 35px;
 }
 
 .parceiro-imagem img {
