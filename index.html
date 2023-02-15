@@ -7,6 +7,7 @@
   <title>Book You</title>
   <meta name="description" content="Disponibilizamos um grande acervo completo de títulos.">
 
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
 <body>
   <header class="header-bg">
     <div class="header container">
-      <a href="./"><img src="./img/bookyou.svg" alt="Book You">
+      <a href="./"><img src="./img/bookyou.svg" width="136" height="136" alt="Book You">
       </a>
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
@@ -37,9 +38,10 @@
         <p class="font-2-l cor-5">Disponibilizamos um grande acervo completo de títulos.</p>
         <a class="botao" href="./livros.html">Mais Títulos</a>
       </div>
-      <div>
-        <img src="./img/livros/introducao.jpg" alt="Livro Design Anthology">
-      </div>
+      <picture>
+        <source media="(max-width:800px)" srcset="./img/livros/introducao.jpg">
+        <img src="./img/livros/introducao.jpg" width="1280" height="1600" alt="Livro Design Anthology">
+      </picture>
     </div>
   </main>
 
@@ -50,7 +52,7 @@
     <ul>
       <li>
         <a href="./livros/thekinfolk.html">
-          <img src="./img/livros/kinfolk-home.jpg" alt="The Kinfolk">
+          <img src="./img/livros/kinfolk-home.jpg" width="670" height="758" alt="The Kinfolk">
           <h3 class="font-1-xl">The Kinfolk</h3>
           <span class="font-2-m cor-8">R$ 169,00</span>
         </a>
@@ -58,7 +60,7 @@
 
       <li>
         <a href="./livros/soulriver.html">
-          <img src="./img/livros/soul_river-home.jpg" alt="Soul River">
+          <img src="./img/livros/soul_river-home.jpg" width="670" height="758" alt="Soul River">
           <h3 class="font-1-xl">Soul River</h3>
           <span class="font-2-m cor-8">R$ 199,00</span>
         </a>
@@ -66,7 +68,7 @@
 
       <li>
         <a href="./livros/howtostop.html">
-          <img src="./img/livros/cody-board-home.jpg" alt="How To Stop">
+          <img src="./img/livros/cody-board-home.jpg" width="670" height="758" alt="How To Stop">
           <h3 class="font-1-xl">How To Stop</h3>
           <span class="font-2-m cor-8">R$ 139,00</span>
         </a>
@@ -74,7 +76,7 @@
 
       <li>
         <a href="./livros/crazylove.html">
-          <img src="./img/livros/crazylove-home.jpg" alt="Crazy Love">
+          <img src="./img/livros/crazylove-home.jpg" width="670" height="758" alt="Crazy Love">
           <h3 class="font-1-xl">Crazy Love</h3>
           <span class="font-2-m cor-8">R$ 179,00</span>
         </a>
@@ -93,7 +95,7 @@
 
 
       <div class="categoria-imagem">
-        <img src="./img/fotos/categorias.jpg" alt="">
+        <img src="./img/fotos/categorias.jpg" width="1400" height="1736" alt="">
       </div>
     </div>
   </article>
@@ -101,20 +103,20 @@
   <section class="parceiros" aria-label="Nossos Parceiros">
     <h2 class="container font-1-xxl">Nossos parceiros<span class="cor-p1">.</span></h2>
     <ul>
-      <li><img src="./img/parceiros/caravan.svg" alt="caravan"></li>
-      <li><img src="./img/parceiros/ranek.svg" alt="ranek.svg"></li>
-      <li><img src="./img/parceiros/handel.svg" alt="handel.svg"></li>
-      <li><img src="./img/parceiros/dogs.svg" alt="dogs.svg"></li>
-      <li><img src="./img/parceiros/lescone.svg" alt="lescone.svg"></li>
-      <li><img src="./img/parceiros/flexblog.svg" alt="flexblog.svg"></li>
-      <li><img src="./img/parceiros/wildbeast.svg" alt="wildbeast.svg"></li>
-      <li><img src="./img/parceiros/surfbot.svg" alt="surfbot.svg"></li>
+      <li><img src="./img/parceiros/caravan.svg" width="140" height="38" alt="caravan"></li>
+      <li><img src="./img/parceiros/ranek.svg" width="149" height="36" alt="ranek.svg"></li>
+      <li><img src="./img/parceiros/handel.svg" width="140" height="50" alt="handel.svg"></li>
+      <li><img src="./img/parceiros/dogs.svg" width="152" height="39" alt="dogs.svg"></li>
+      <li><img src="./img/parceiros/lescone.svg" width="208" height="41" alt="lescone.svg"></li>
+      <li><img src="./img/parceiros/flexblog.svg" width="165" height="38" alt="flexblog.svg"></li>
+      <li><img src="./img/parceiros/wildbeast.svg" width="196" height="34" alt="wildbeast.svg"></li>
+      <li><img src="./img/parceiros/surfbot.svg" width="200" height="49" alt="surfbot.svg"></li>
     </ul>
   </section>
 
   <section class="depoimento" aria-label="Depoimento livros Book You">
     <div>
-      <img src="./img/livros/depoimento.jpg" alt="Pessoa lendo um livro">
+      <img src="./img/livros/depoimento.jpg" width="1560" height="1360" alt="Pessoa lendo um livro">
     </div>
     <div class="depoimento-conteudo">
       <blockquote class="font-1-xl cor-p5">
@@ -163,7 +165,7 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bookyou.svg" alt="Book You">
+      <img src="./img/bookyou.svg" width="136" height="136" alt="Book You">
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -173,9 +175,9 @@
           <li>Curitiba - PR</li>
         </ul>
         <div class="footer-redes">
-          <a href="./"> <img src="./img/redes/instagram.svg" alt="Instagram"></a>
-          <a href="./"> <img src="./img/redes/facebook.svg" alt="Facebook"></a>
-          <a href="./"> <img src="./img/redes/youtube.svg" alt="Youtube"></a>
+          <a href="./"> <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram"></a>
+          <a href="./"> <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook"></a>
+          <a href="./"> <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube"></a>
         </div>
       </div>
       <div class="footer-informacoes">
