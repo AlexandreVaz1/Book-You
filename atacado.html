@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+  <script> document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="atacado">
@@ -40,7 +41,7 @@
     </div>
 
     <div class="atacado container">
-      <div class="atacado-item">
+      <div class="atacado-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl cor-6">Mínimo R$300</h3>
         <span class="font-1-xl cor-0">10% <span class="font-1-xs cor-6">off</span></span>
         <ul class="font-2-m cor-0">
@@ -52,8 +53,8 @@
         <a class="botao secundario" href="./orcamento.html?tipo=atacado&produto=prata">Inscreva-se</a>
       </div>
 
-      <div class="atacado-item">
-        <h3 class="font-1-xl cor-p1">Acima de R$2mil</h3>
+      <div class="atacado-item fadeInRight" data-anime="400">
+        <h3 class="font-1-xl cor-p1 ">Acima de R$2mil</h3>
         <span class="font-1-xl cor-0">15% <span class="font-1-xs cor-6">off</span></span>
         <ul class="font-2-m cor-0">
           <li>Parcele em 10x sem juros</li>
@@ -163,6 +164,8 @@
     </div>
 
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+
   <script src="./js/script.js"></script>
 </body>
 
